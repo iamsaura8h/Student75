@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student75</title>
+    <style>
+        body {
+            background-image: url('p6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin: 0;
+        }
+
+        label {
+            color:black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-left: 10px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.5); /* White semi-transparent background */
+            padding: 5px; /* Add padding for better visibility */
+            display: inline-block; /*make the label behave like a block element*/
+            width: 500px; /*set a fixed width for the label*/
+        }
+
+        input {
+            font-size: 1.5em;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+    
+        }
+        button {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px;
+            background-color:#1E90FF;
+            width:160px;
+            color: #ffffff;
+            /*border:2px solid #ffffff;*/
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 100x;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /*transition: background-color 0.3s;add smooth transition effect*/
+            -webkit-transition-duration: 0.3s;
+            -webkit-transition-property: box-shadow,transform;
+            transition-property: box-shadow,transform;
+        }
+        button:hover, button:focus, button:active{
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            /*background-color: blue;*/
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);/*scale the button on hover*/
+        }
+
+        #result {
+             color: black;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-size: 1.5em;
+             font-weight: bold;
+             margin-top: 20px;
+             background: rgba(255, 255, 255, 0.5); /* White semi-transparent background */
+             padding: 5px; /* Add padding for better visibility */
+}
+    </style>
+</head>
+<body>
+    <h1>Student 75</h1>
+    <br>
+    <br>
+    <form>
+        <label for="totalDays">Total Number of days Hosted by College : </label>
+        <input type="number" placeholder="enter here" id="totalDays">
+        <br>
+        <label for="daysAttended">Total Number of Days you have attended : </label>
+        <input type="number" placeholder="enter here" id="daysAttended">
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="calculateAttendance()">Submit</button>
+        <p id="result"></p>
+    </form>
+    <script src="script.js"></script>
+
+</body>
+</html>
